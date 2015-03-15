@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="Button_text">Click me</string>
+    <string name="label_text">Hello World, MyActivity</string>
+    <string name="toast_message">Hello from Toast!!</string>
+    <string name="s">Ok</string>
+    <string name="bntOkCaption">Ok</string>
+</resources>

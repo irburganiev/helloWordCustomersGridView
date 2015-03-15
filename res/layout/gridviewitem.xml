@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent">
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:rowCount="1" android:columnCount="5"
+              android:rowOrderPreserved="false" android:focusable="true" android:focusableInTouchMode="true"
+              android:clickable="true" android:padding="30dp" android:longClickable="true">
+
+    <TextView
+            android:layout_width="212dp"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textViewName" android:layout_column="0"
+            android:layout_row="0" android:gravity="fill" android:autoText="false" android:clickable="true"
+            android:focusable="true" android:focusableInTouchMode="true" android:longClickable="true"
+            android:enabled="true"></TextView>
+
+    <TextView
+            android:layout_width="468dp"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textViewSurname" android:layout_row="0" android:layout_column="1"
+            android:gravity="fill"/>
+    <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:inputType="number"
+            android:id="@+id/TextViewAge" android:layout_row="0" android:layout_column="2"
+            android:gravity="fill"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="View"
+            android:id="@+id/buttonViewDetail" android:layout_row="0" android:layout_column="3"
+            android:hint="Detail View" android:gravity="fill" android:singleLine="false" android:clickable="false"
+            android:focusable="false"/>
+    <Button android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Delete"
+            android:id="@+id/buttonDelete" android:layout_row="0" android:layout_column="4"
+            android:hint="Detail View" android:gravity="fill" android:singleLine="false"/>
+</GridLayout>
+</FrameLayout>
