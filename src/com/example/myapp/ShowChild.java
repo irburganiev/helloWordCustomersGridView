@@ -25,6 +25,11 @@ public class ShowChild extends Activity {
 
 
     public void OnOkClick(View view) {
+        EditCustomer();
+        this.finish();
+    }
+
+    private void EditCustomer() {
         customer.set_name(((EditText) this.findViewById(R.id.NameTxt)).getText().toString());
         customer.set_surName(((EditText) this.findViewById(R.id.SurNameTxt)).getText().toString());
         customer.set_age(Integer.parseInt(((EditText) this.findViewById(R.id.AgeTxt)).getText().toString()));
@@ -32,6 +37,5 @@ public class ShowChild extends Activity {
         setIntent(newIntent);
         newIntent.putExtra(MainActivity.PersonExtra, customer);
         setResult(0,newIntent);
-        this.finish();
     }
 }
